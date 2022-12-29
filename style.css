@@ -1,39 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+@font-face {
+    font-family: 'Agrandir Black';
+    src: url('./fonts/Agrandir-GrandHeavy.woff2') format('woff2'),
+      url('./fonts/Agrandir-GrandHeavy.woff') format('woff');
+}
+
+:root {
+    --light-beige: #ffdfcd;
+}
+
+/* Path: style.css */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    background-color: antiquewhite;
-}
-
-h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 40px;
-    text-align: center;
-}
-
-img {
-    height: 300px;
-    width: auto;
-    flex: 1;
-}
-
-ul {
-    list-style: square;
+    width: 100vw;
+    padding: 50px 50px 20px 50px;
+    background-color: var(--light-beige);
+    font-family: 'Open Sans', sans-serif;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-li {
-    font-family: 'Raleway', sans-serif;
-    flex: 1 1 auto;
+header > h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
 }
 
-li::marker {
+h1, 
+h2 {
+    font-family: 'Agrandir Black', sans-serif;
+}
+
+main {
+    display: inherit;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.main-page-recipes  {
+    max-width: 30%;
+    padding: 50px;
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 10px;
+    box-shadow: 10px 10px black;
+
     
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-a:visited {
-    color: brown;
+.main-page-recipes > img {
+    width: 300px;
+    height: 300px;
+    border: 3px solid black;
+    object-fit: cover;
+}
+
+.main-page-recipes > h2 {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.main-page-recipes > p {
+    margin-top: 20px;
+}
+
+.main-page-links {
+    font-size: 0.95rem;
+}
+
+a {
+    color: black;
+    text-decoration: none;
 }
 
 a:hover {
-    color: darkolivegreen;
-    background-color: beige;
+    text-decoration: underline;
 }
 
+footer {
+    margin-top: 50px;
+    text-align: center;
+}
